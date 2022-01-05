@@ -1,0 +1,26 @@
+example:
+  property: I AM THE DEFAULT
+
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+    database: POSTGRESQL
+    show-sql: true
+  datasource:
+    dbcp2:
+      test-while-idle: true
+      validation-query: SELECT 1
+  sql:
+    init:
+      platform: postgres
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    enabled-by-default: true

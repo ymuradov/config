@@ -1,0 +1,17 @@
+example:
+  property: I AM DEV
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ostock_dev
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: postgres
+
+appl:
+  name: PRIVET
+
+#  jpa:
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.PostgreSQL9Dialect
