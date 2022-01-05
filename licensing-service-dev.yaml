@@ -9,7 +9,7 @@ spring:
     password: postgres
 
 appl:
-  name: PRIVET
+  name: ALOHA
 
 #  jpa:
 #    properties:
