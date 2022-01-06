@@ -25,6 +25,9 @@ management:
         include: "*"
     enabled-by-default: true
 
+server:
+  port: 8080
+
 eureka:
   instance:
     prefer-ip-address: true
