@@ -10,3 +10,9 @@ eureka:
       defaultZone: https://${eureka.instance.hostname}:${server.port}/eureka/
   server:
     wait-time-in-ms-when-sync-empty: 5
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
