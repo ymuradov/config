@@ -1,7 +1,10 @@
-
-example.property= I AM PROD
+example:
+  property: I AM PROD
 
 # DataSource settings: set here your own configurations for the database 
-spring.datasource.url = jdbc:postgresql://database:5432/ostock_prod
-spring.datasource.username = postgres
-spring.datasource.password = {cipher}f4609209a3e75d8ac79a5e3063ce151c2cd28aa431170bb06974b9421e807b6a
+spring:
+  datasource:
+    url: jdbc:postgresql://database:5432/ostock_prod
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: '{cipher}a5e09672aa357bc6e98c69a3d9781bcfd563e042e1ce7c33503d272b83814847'
